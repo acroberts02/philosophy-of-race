@@ -57,7 +57,7 @@
         <span class="eyebrow">Context</span>
         <!-- Replace this heading with your real framework title -->
         <h2>Conceptual Framework</h2>
-        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. TODO: add framing text here.</p>
+        <p class="section-subtitle">Familiarize yourself with the building blocks of the argument.</p>
       </div>
       <div class="framework-grid">
         <div class="framework-text">
@@ -85,7 +85,7 @@
         <figure class="framework-image">
           <!-- Replace with custom image -->
           <img src="images/0x0.jpg.webp" alt="AI Visualization">
-          <figcaption>Image from Joseph Tarselli, “From Data to Decisions: How AI and Data Visualization Technologies Are Redefining Business Intelligence,” Forbes (2025).</figcaption>
+          <figcaption>Image: Joseph Tarselli, “From Data to Decisions: How AI and Data Visualization Technologies Are Redefining Business Intelligence,” Forbes (2025).</figcaption>
         </figure>
       </div>
     </section>
@@ -95,29 +95,32 @@
         <span class="eyebrow">Examples</span>
         <!-- Replace this heading with your real case study intro -->
         <h2>Case Studies</h2>
-        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. TODO: add setup for the examples.</p>
+        <p class="section-subtitle">Click on each of the case studies to learn more about a real world example of racial biases in algorithms.</p>
       </div>
       <div class="card-grid">
         <article class="card" data-modal-target="case1-modal">
           <!-- Replace this card heading and text with a real example later -->
-          <h3>Case Study 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <h3>Photo tagging and facial recognition softwares</h3>
+          <p>One of the new, shiny features rolled out in the past decade with phone updates was the auto-sorting of photos on your phone. But how well are they truly sorted?</p>
           <!-- Replace with custom image or icon -->
-          <img src="https://picsum.photos/160/100" alt="Placeholder" class="card-image">
+          <img src="images/_83974184_29ba8607-9446-4298-9d9e-d33514811487.jpg.webp" alt="Google algorithm error" class="card-image">
+          <button class="btn ghost-btn" type="button">Learn more</button>
         </article>
         <article class="card" data-modal-target="case2-modal">
           <!-- Replace this card heading and text with a real example later -->
-          <h3>Case Study 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <h3>Risk scores in the criminal justice system</h3>
+          <p>Risk scores are supposed to help judges make fair decisions, but what happens when those scores treat some people as more dangerous than others?</p>
           <!-- Replace with custom image or icon -->
-          <img src="https://picsum.photos/161/100" alt="Placeholder" class="card-image">
+          <img src="images/2016-09-23-15540.png" alt="COMPAS example" class="card-image">
+          <button class="btn ghost-btn" type="button">Learn more</button>
         </article>
         <article class="card" data-modal-target="case3-modal">
           <!-- Replace this card heading and text with a real example later -->
-          <h3>Case Study 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <h3>Banking algorithms and loan conditions</h3>
+          <p>Banks are turning to algorithms to decide who gets loans, but what happens, when “objective” credit scores quietly repeat our patterns of discrimination?</p>
           <!-- Replace with custom image or icon -->
-          <img src="https://picsum.photos/162/100" alt="Placeholder" class="card-image">
+          <img src="images/AI_in_banking-min.png" alt="Banking AI Visualization" class="card-image">
+          <button class="btn ghost-btn" type="button">Learn more</button>
         </article>
       </div>
 
@@ -125,33 +128,57 @@
       <div class="modal" id="case1-modal" role="dialog" aria-modal="true" aria-labelledby="case1-title" hidden>
         <div class="modal-content">
           <button class="modal-close" aria-label="Close modal">&times;</button>
-          <h3 id="case1-title">Case Study 1 (Placeholder)</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. TODO: add detailed description for this case.</p>
-          <p>TODO: add data, timeline, or quotes as needed.</p>
-          <!-- Replace with custom image -->
-          <img src="https://picsum.photos/500/280" alt="Placeholder illustration">
+          <h3 id="case1-title">Photo tagging and facial recognition softwares</h3>
+          <div class="modal-body">
+            <p>One of the new, shiny features rolled out in the past decade with phone updates was the auto-sorting of photos on your phone. Most modern phones can search for images containing certain objects or people using a simple keyword, thanks to algorithms that identify these things in each image in your camera roll. But when Google first rolled out this feature, it showed clear racial biases that displayed definite disrespect to users of color. A BBC article titled <em>Google Apologises for Photos App’s Racist Blunder</em> discusses the issue at length.</p>
+
+            <p>A Google user reported photos of him and his dark-skinned friend being sorted into an album and labeled as gorillas. This prompted an immediate response from Google, but of course, raised some much needed questions about the training data provided to the AI. Based on basic knowledge regarding AI, we know that the algorithms are only proficient at recognizing what they have been trained on, so although we may never see the dataset used by Google, we can reasonably assume that it was not diverse enough to produce a publicly releasable model.</p>
+
+            <p>This incorrect labeling of dark-skinned individuals as gorillas was not only disrespectful, but also perpetuated a message of otherness regarding people of color. Intentional or not, the algorithm showed racial bias against people of color and clearly disrespected the individuals in a way that Glasgow would consider racist.</p>
+          </div>
+          <figure class="modal-figure">
+            <!-- Replace with custom image -->
+            <img src="images/_83974184_29ba8607-9446-4298-9d9e-d33514811487.jpg.webp" alt="Google algorithm error">
+            <figcaption>Image: “Google Apologises for Photos App’s Racist Blunder,” BBC News (2015).</figcaption>
+          </figure>
         </div>
       </div>
 
       <div class="modal" id="case2-modal" role="dialog" aria-modal="true" aria-labelledby="case2-title" hidden>
         <div class="modal-content">
           <button class="modal-close" aria-label="Close modal">&times;</button>
-          <h3 id="case2-title">Case Study 2 (Placeholder)</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. TODO: add detailed description for this case.</p>
-          <p>TODO: add supporting points or visuals.</p>
-          <!-- Replace with custom image -->
-          <img src="https://picsum.photos/501/280" alt="Placeholder illustration">
+          <h3 id="case2-title">Risk scores in the criminal justice system</h3>
+          <div class="modal-body">
+            <p>Risk scores are supposed to help judges make fair decisions, but that might not actually be the case when the algorithms generating the scores contain biases. In the article <em>Coded Bias: Decoding Racism in Artificial Intelligence Technologies</em>, Gideon Christian explores a study done by ProPublica to uncover the true implications of these risk assessment algorithms.</p>
+
+            <p>The study focuses on the algorithm, commonly known as COMPAS, and its ability to predict rates of reoffense in defendants. The study found that the algorithm falsely predicted reoffense for black defendants at about twice the rate that it did for white defendants, and further that white defendants were more likely to be classified as “low risk” than their black counterparts. In some cases, black defendants labeled as "high risk” did not reoffend, while white counterparts labeled as “low risk” did reoffend. Essentially, white defendants are receiving quite a bit of slack from the algorithm, while black defendants are facing quite the opposite and this software is still one of the most widely used AI-based risk assessment tools in the U.S. criminal justice system despite these findings.</p>
+
+            <p>Based on the methodology of algorithms, we can attribute these biases to the data on which the model was trained, but that does not negate their consequences. An AI model can never be any better than the data from which it learns, and in this case the data itself is skewed to begin with because of deeply rooted biases in the U.S. justice system. It is easy to chalk up the problem to skewed data, but that does not lessen the very real consequences of the biases. Regardless of the source, the COMPAS algorithm is, by Glasgow’s definition, racist, as it shows disrespect to the black defendants in the criminal justice system and has very real and extreme consequences for the outcome of their lives. A biased algorithm has no place in deciding the future of real individuals.</p>
+          </div>
+          <figure class="modal-figure">
+            <!-- Replace with custom image -->
+            <img src="images/2016-09-23-15540.png" alt="COMPAS example">
+            <figcaption>Image: Akaash Kambath, “A ‘COMPAS’ That’s Pointing in the Wrong Direction,” Data Science W231 Blog (2021).</figcaption>
+          </figure>
         </div>
       </div>
 
       <div class="modal" id="case3-modal" role="dialog" aria-modal="true" aria-labelledby="case3-title" hidden>
         <div class="modal-content">
           <button class="modal-close" aria-label="Close modal">&times;</button>
-          <h3 id="case3-title">Case Study 3 (Placeholder)</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. TODO: add detailed description for this case.</p>
-          <p>TODO: add relevant metrics or stakeholder notes.</p>
-          <!-- Replace with custom image -->
-          <img src="https://picsum.photos/502/280" alt="Placeholder illustration">
+          <h3 id="case3-title">Banking algorithms and loan conditions</h3>
+          <div class="modal-body">
+            <p>Banks are turning to algorithms to decide who gets loans and how those loans will be financed. This is yet another life changing field where people of color are being disadvantaged by a computer. Deciding who is eligible for a loan and under what conditions is a long and complex process that is constantly developing, but when that complexity is boiled down to such a mathematical form we find flaws, and those flaws are certainly not equal ones.</p>
+
+            <p>In his article <em>A Philosophical Analysis of AI and Racism</em>, Lel Jones delves into a section on the implications of algorithms in the banking sector. The main study that he presents is a study out of the University of California, Berkley titled “Consumer-Lending Discrimination in the Era of FinTech.” This study looked at interest rates in the latinx and black populations and found that the banking algorithm was charging latinx and black borrowers with the same FICO credit scores as their white counterparts interest rates that were on average about 7.5 basis points higher on their loans. Jones discusses possible reasoning and counterarguments for this finding, but at its core it is discrimination.</p>
+
+            <p>From Glasgow’s perspective, this finding fits the idea of racial disrespect. The lending algorithm is treating people of color as less trustworthy to pay back their loans by charging them higher interest rates, when their credit scores, another supposedly objective number, show that they have similar patterns as their white counterparts. The algorithms are likely trained on data from banking history in which loans were less accessible to people of color, once again perpetuating past patterns into the future. The inability of these populations to access financial assistance equally is a fault that is absolutely racist and could impact their lives in a cyclical way, further perpetuating biased stereotypes.</p>
+          </div>
+          <figure class="modal-figure">
+            <!-- Replace with custom image -->
+            <img src="images/AI_in_banking-min.png" alt="Banking AI Visualization">
+            <figcaption>Image: Rosalia Mazza, “AI’s Golden Handshake with Banking: Redefining Trust and Financial Intelligence,” FinTech Weekly (2025).</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -232,9 +259,13 @@
         <p class="section-subtitle">Below are the sources used for both ideas and images in the contents of the website.</p>
       </div>
       <ul class="citation-list">
+        <li>Christian, C. <em>Coded bias: Decoding racism in artificial intelligence technologies.</em> <em>Coding, Computational Modeling, and Equity in Mathematics Education Symposium</em>, St. Catharines, ON, Canada, 2023.</li>
         <li>Glasgow, Joshua. <em>Racism as Disrespect.</em> <em>Ethics</em>, vol. 120, no. 1, 2009, pp. 64–93. JSTOR, https://doi.org/10.1086/648588. Accessed 8 Dec. 2025.</li>
+        <li><em>Google Apologises for Photos App’s Racist Blunder.</em> <em>BBC News</em>, 1 July 2015, www.bbc.com/news/technology-33347866. Accessed 9 Dec. 2025.</li>
         <li><em>Joshua Glasgow.</em> <em>Philosophy at Sonoma State University</em>, Sonoma State University, philosophy.sonoma.edu/faculty-staff/joshua-glasgow. Accessed 8 Dec. 2025.</li>
         <li>Jones, Lel. <em>A philosophical analysis of AI and racism.</em> <em>Stance: An International Undergraduate Philosophy Journal</em>, vol. 13, 2020, pp. 36-46.</li>
+        <li>Kambath, Akaash. <em>A ‘COMPAS’ That’s Pointing in the Wrong Direction.</em> <em>Data Science W231: Behind the Data: Humans and Values</em>, School of Information, University of California, Berkeley, 9 July 2021, blogs.ischool.berkeley.edu/w231/2021/07/09/a-compas-thats-pointing-in-the-wrong-direction/.</li>
+        <li>Mazza, Rosalia. <em>AI’s Golden Handshake with Banking: Redefining Trust and Financial Intelligence.</em> <em>FinTech Weekly</em>, 18 Jan. 2025, www.fintechweekly.com/magazine/articles/ai-in-banking.</li>
         <li>Tarselli, Joseph. <em>From Data to Decisions: How AI and Data Visualization Technologies Are Redefining Business Intelligence.</em> <em>Forbes</em>, Forbes Media, 10 Mar. 2025, www.forbes.com/councils/forbestechcouncil/2025/03/10/from-data-to-decisions-how-ai-and-data-visualization-technologies-are-redefining-business-intelligence/.</li>
       </ul>
     </section>
