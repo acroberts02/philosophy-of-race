@@ -39,12 +39,18 @@ const openModal = (id) => {
   if (modal) {
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    modal.querySelectorAll('.modal-content, .modal-body').forEach((el) => {
+      el.scrollTop = 0;
+    });
   }
 };
 
 const closeModal = (modal) => {
   modal.hidden = true;
   document.body.style.overflow = '';
+  modal.querySelectorAll('.modal-content, .modal-body').forEach((el) => {
+    el.scrollTop = 0;
+  });
 };
 
 modalTriggers.forEach((card) => {
